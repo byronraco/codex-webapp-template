@@ -11,7 +11,8 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "dev:reset": "pkill -f \"next dev\" || true && rm -rf .next && npm run dev"
+    "dev:reset": "pkill -f \"next dev\" || true && rm -rf .next && npm run dev",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -19,7 +20,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^0.1",
+    "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^20",
